@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/2886ecc7fe2645058b8bb18b08e9ff7b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2886ecc7fe2645058b8bb18b08e9ff7b
+run_name: gaudy-perch-986
+run_uuid: 2886ecc7fe2645058b8bb18b08e9ff7b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737295345384
+status: 1
+tags: []
+user_id: ioanna

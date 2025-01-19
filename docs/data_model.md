@@ -135,7 +135,7 @@ class Criterion(Enum):
 #### Transfer Learning Model Enum
 
 The TLModel enum encompasses a range of pre-trained deep learning models, such as AlexNet, DenseNet-121, ResNet-18,
-ResNet-34, and VGG. These pre-trained models serve as the foundation for audio genre classification tasks.
+ResNet-34, and VGG. These pre-trained models serve as the foundation for Speech Emotion Recognition tasks.
 
 ```python
 from enum import Enum

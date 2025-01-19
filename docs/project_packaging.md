@@ -43,7 +43,7 @@ packaging tools. This ensures compatibility and interoperability with common dev
 
 ### How
 
-The setup.py script configures the packaging for the 'music-genre-classification' Python project. Key points:
+The setup.py script configures the packaging for the 'ser' Python project. Key points:
 
 * Dependencies: Lists project dependencies (Pydantic, librosa, numpy, etc.).
 * Package Configuration: Specifies project metadata (name, version, description).
@@ -77,9 +77,9 @@ deps = {
 }
 
 setup(
-    name='music-genre-classification',
+    name='ser',
     version='1.0.1',
-    description='Music Genre Classification',
+    description='Speech Emotion Recognition',
     install_requires=[],
     extras_require=deps,
     entry_points={
@@ -87,7 +87,7 @@ setup(
             'pipeline = __main__.py:cli'
         ]
     },
-    packages=['genre_classification']
+    packages=['ser']
 )
 ~~~
 
@@ -113,7 +113,7 @@ stages of the development and deployment lifecycle.
 
 ### How
 
-In this thesis, Docker takes center stage in managing the intricacies of music genre classification pipelines. The
+In this thesis, Docker takes center stage in managing the intricacies of Speech Emotion Recognition pipelines. The
 provided Dockerfile employs a multi-stage building approach, starting with a base image and extending functionality
 through specialized stages ('awscli' and 'dl_pipelines').
 
@@ -125,8 +125,7 @@ Key Features:
 * DVC Configuration: Implements DVC configuration in the 'dl_pipelines' stage, ensuring versioned data and
   reproducibility.
 * Secrets Handling: Utilizes Docker secrets for secure AWS configuration and credentials.
-* Default Command: Specifies the default command to execute when the container starts, streamlining music genre
-  classification tasks.
+* Default Command: Specifies the default command to execute when the container starts, streamlining ser tasks.
 
 This Dockerfile encapsulates the entire pipeline, ensuring consistency, reproducibility, and ease of deployment in the
 dynamic landscape of machine learning workflows 
@@ -168,5 +167,5 @@ RUN pip install -r requirements.txt
 COPY . .
 
 # Define the default command to run when the container starts
-# docker run -it --rm music-genre-classif python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path checkpoints --images_path Image_data
+# docker run -it --rm ser python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path checkpoints --images_path Image_data
 ~~~

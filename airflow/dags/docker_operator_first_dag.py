@@ -12,8 +12,8 @@ def docker_dag():
 
     t2 = DockerOperator(
         task_id='t2',
-        image='music-genre-classif:latest',
-        command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path checkpoints --images_path Data/images_original',
+        image='ser:latest',
+        command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path ser_checkpoints --images_path Data/images_original',
         network_mode='bridge',
         environment={
             'AWS_DEFAULT_REGION': 'us-east-1',

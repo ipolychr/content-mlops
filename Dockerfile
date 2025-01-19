@@ -27,10 +27,9 @@ RUN /opt/aws/install
 COPY .dvc .dvc
 COPY .git .git
 COPY dvc_pull_files.sh dvc_pull_files.sh
-COPY checkpoints checkpoints
-COPY Data/genres_original.dvc Data/genres_original.dvc
-COPY Data/images_original.dvc Data/images_original.dvc
-COPY genre_classification genre_classification
+COPY ser_checkpoints ser_checkpoints
+COPY data/data.dvc data/data.dvc
+COPY ser ser
 COPY __main__.py __main__.py
 COPY settings.py settings.py
 # install predictor and copy files

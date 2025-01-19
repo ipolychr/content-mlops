@@ -2,7 +2,7 @@
 
 ## What
 
-The training process in audio genre classification using deep learning is a series of stages that iteratively modify a
+The training process in Speech Emotion Recognition using deep learning is a series of stages that iteratively modify a
 deep neural network's parameters to create representations capable of accurately differentiating between various audio
 genres. This process involves loading and preprocessing audio data, initializing a pre-trained deep learning model,
 fine-tuning the model's parameters, computing loss, optimizing the model, and monitoring its performance. It is designed
@@ -10,27 +10,27 @@ to expedite and enhance the effectiveness of the model in classifying audio genr
 
 ## Why
 
-The training process in deep learning classification problems, including music genre classification, holds paramount
+The training process in deep learning classification problems, including Speech Emotion Recognition, holds paramount
 importance for several reasons:
 
 * Feature Learning: Deep learning models, especially pre-trained ones, have the ability to automatically learn and
-  extract relevant features from complex data. In music genre classification, this feature learning capability enables
+  extract relevant features from complex data. In Speech Emotion Recognition, this feature learning capability enables
   the model to discern intricate patterns and spectral characteristics that may not be apparent in raw audio
   data.[LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. nature, 521(7553), 436-444.]
 * Generalization: Through training, models generalize their understanding of data, allowing them to make accurate
-  predictions on unseen examples. In the context of music genre classification, this means that a well-trained model can
-  classify not only the training data but also new and diverse music samples, contributing to its real-world
+  predictions on unseen examples. In the context of Speech Emotion Recognition, this means that a well-trained model can
+  classify not only the training data but also new and diverse speech samples, contributing to its real-world
   applicability.[LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. nature, 521(7553), 436-444.]
-* Complex Relationships: Music genre classification often involves capturing intricate relationships between various
+* Complex Relationships: Speech Emotion Recognition often involves capturing intricate relationships between various
   audio features and genre labels. Deep learning models excel at modeling these complex relationships, enabling them to
   differentiate between genres that may share similar
   characteristics.[Schmidhuber, J. (2015). Deep learning in neural networks: An overview. Neural networks, 61, 85-117.]
 * Efficiency: Training deep learning models can be computationally intensive, but once trained, they can make rapid
-  predictions. This efficiency is crucial for real-time or large-scale music genre classification
+  predictions. This efficiency is crucial for real-time or large-scale Speech Emotion Recognition
   applications.[Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2017). ImageNet classification with deep convolutional neural networks. Communications of the ACM, 60(6), 84-90.]
-* Customization: Fine-tuning pre-trained models for specific classification tasks, such as music genre classification,
+* Customization: Fine-tuning pre-trained models for specific classification tasks, such as Speech Emotion Recognition,
   allows for the incorporation of domain-specific knowledge. This customization tailors the model's features to the
-  nuances of music genres, increasing its
+  nuances of speech emotions, increasing its
   accuracy.[Yosinski, J., Clune, J., Bengio, Y., & Lipson, H. (2014). How transferable are features in deep neural networks?. Advances in neural information processing systems, 27.]
 
 ## How
@@ -39,16 +39,15 @@ Certainly, here's a revised "How" section, focusing on the insights that the pro
 How is the Training Process Implemented?
 
 The training process is implemented through Python code that leverages deep learning techniques to achieve effective
-music genre classification
+Speech Emotion Recognition
 
 ### Model Initialization
 
 * Utilizing Pre-trained Models: The code employs pre-trained deep learning models, including AlexNet, DenseNet-121,
-  ResNet-18, ResNet-34, and VGG. These models serve as the foundation for audio genre classification. Leveraging
+  ResNet-18, ResNet-34, and VGG. These models serve as the foundation for Speech Emotion Recognition. Leveraging
   pre-trained models accelerates the feature extraction process and contributes to model efficiency.
 * Customization: The code showcases the customization of pre-trained models by replacing the last fully connected layer
-  with a new layer tailored to the number of output classes. This customization adapts the model to the specific music
-  genre classification task.
+  with a new layer tailored to the number of output classes. This customization adapts the model to the specific ser task.
 
 ### Fine-tuning and Feature Learning
 
@@ -88,7 +87,7 @@ categorization tasks. The following pre-trained models are utilized:
   [Simonyan, Karen, and Andrew Zisserman. "Very deep convolutional networks for large-scale image recognition." arXiv preprint arXiv:1409.1556 (2014).]
 
 These pre-trained models can extract hierarchical features from Mel spectrograms, providing a strong foundation for
-audio genre classification and aiding in understanding complex audio patterns.
+Speech Emotion Recognition and aiding in understanding complex audio patterns.
 
 ### Hyperparameter Optimization
 

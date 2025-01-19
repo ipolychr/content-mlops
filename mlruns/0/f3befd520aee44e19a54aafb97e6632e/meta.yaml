@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/f3befd520aee44e19a54aafb97e6632e/artifacts
+end_time: 1737219841921
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f3befd520aee44e19a54aafb97e6632e
+run_name: secretive-dove-492
+run_uuid: f3befd520aee44e19a54aafb97e6632e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737219752137
+status: 4
+tags: []
+user_id: ioanna

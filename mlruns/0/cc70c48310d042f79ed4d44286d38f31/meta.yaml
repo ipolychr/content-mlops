@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/cc70c48310d042f79ed4d44286d38f31/artifacts
+end_time: 1737295394972
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: cc70c48310d042f79ed4d44286d38f31
+run_name: bright-tern-472
+run_uuid: cc70c48310d042f79ed4d44286d38f31
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737295379242
+status: 3
+tags: []
+user_id: ioanna

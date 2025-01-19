@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/b531d929678a4d3a94a570ce6c4f2475/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b531d929678a4d3a94a570ce6c4f2475
+run_name: victorious-fly-635
+run_uuid: b531d929678a4d3a94a570ce6c4f2475
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737219505441
+status: 1
+tags: []
+user_id: ioanna

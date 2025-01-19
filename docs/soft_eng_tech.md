@@ -33,7 +33,7 @@ The Factory Pattern is useful in the machine learning pipeline for the following
   from abc import ABC, abstractmethod
   from typing import List
   
-  from genre_classification.data_model.segment import Segment
+  from ser.data_model.segment import Segment
   
   class FeatureExtractorBase(ABC):
       @abstractmethod
@@ -50,8 +50,8 @@ The Factory Pattern is useful in the machine learning pipeline for the following
   import librosa
   import numpy as np
   
-  from genre_classification.data_model.segment import Segment
-  from genre_classification.feature_extraction.base import FeatureExtractorBase
+  from ser.data_model.segment import Segment
+  from ser.feature_extraction.base import FeatureExtractorBase
   
   class FeatureExtraction(FeatureExtractorBase):
       def __init__(

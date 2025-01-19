@@ -4,7 +4,7 @@
 
 Feature extraction is a crucial stage in deep learning-based audio categorization. It involves the transformation of raw
 audio data into meaningful representations that machine learning models can efficiently utilize. This process is
-essential for enhancing the precision and effectiveness of music genre classification systems, as it allows the
+essential for enhancing the precision and effectiveness of Speech Emotion Recognition systems, as it allows the
 identification of distinctive patterns and traits in audio data.
 
 ## Why

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/aa04cfa1f93041a983860473219ccf59/artifacts
+end_time: 1737220374997
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: aa04cfa1f93041a983860473219ccf59
+run_name: masked-ram-998
+run_uuid: aa04cfa1f93041a983860473219ccf59
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737220287215
+status: 4
+tags: []
+user_id: ioanna

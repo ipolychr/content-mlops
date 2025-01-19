@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/332bafbd67a148feae814c12c686ec7f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 332bafbd67a148feae814c12c686ec7f
+run_name: luminous-yak-655
+run_uuid: 332bafbd67a148feae814c12c686ec7f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737290589184
+status: 1
+tags: []
+user_id: ioanna

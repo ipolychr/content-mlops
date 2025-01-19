@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/1533a5e312a34849a8f5b9b6af6061a3/artifacts
+end_time: 1737222986710
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1533a5e312a34849a8f5b9b6af6061a3
+run_name: handsome-grouse-986
+run_uuid: 1533a5e312a34849a8f5b9b6af6061a3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737222976882
+status: 3
+tags: []
+user_id: ioanna

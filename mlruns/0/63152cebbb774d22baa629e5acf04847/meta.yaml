@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/63152cebbb774d22baa629e5acf04847/artifacts
+end_time: 1737289520591
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 63152cebbb774d22baa629e5acf04847
+run_name: vaunted-ape-747
+run_uuid: 63152cebbb774d22baa629e5acf04847
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737289497174
+status: 3
+tags: []
+user_id: ioanna

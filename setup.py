@@ -20,9 +20,9 @@ deps = {
 }
 
 setup(
-    name='music-genre-classification',
+    name='ser',
     version='1.0.1',
-    description='Music Genre Classification',
+    description='Speech Emotion Recognition',
     install_requires=[],
     extras_require=deps,
     entry_points={
@@ -30,5 +30,5 @@ setup(
             'pipeline = __main__.py:cli'
         ]
     },
-    packages=['genre_classification']
+    packages=['ser']
 )

@@ -1,8 +1,8 @@
-# Designing a Scalable and Reproducible Machine Learning Workflow Thesis
+# Designing a Scalable and Reproducible Machine Learning Workflow
 
-## Music Genre Classification Use Case
+## SER Use Case
 
-This implementation is an integral part of my thesis conducted in collaboration with the University of West Attica,
+This implementation is an integral part of my paper Developing Robust and Reproducible Machine Learning Systems conducted in collaboration with the University of West Attica,
 reflecting a culmination of academic exploration and practical application in the field of machine learning.
 
 ### Introduction
@@ -26,15 +26,15 @@ workflows.
 |-- airflow/
 |   |-- dags/
 |   |-- logs/
-|-- checkpoints/
+|-- ser_checkpoints/
 |-- evidently_ai/
-|-- Data/
+|-- data/
 |   |-- .dvc
 |-- Dockerfile
 |-- docs/
 |-- dvc_pull_files.sh
 |-- dvc.yaml
-|-- genre_classification/
+|-- ser/
 |   |-- data_model/
 |   |   |-- (dir with data models used in the project)
 |   |-- entrypoints.py
@@ -68,7 +68,7 @@ workflows.
 
 3. evidently_ai/: Directory containing the code and reports from evidently. [Internal Evidently AI Documentation](docs/evidently_ai.md)
 
-4. Data/: Directory with a DVC file to synchronize data.
+4. data/: Directory with a DVC file to synchronize data.
 
 5. Dockerfile: Script to build the project using Docker. [Internal Docker Documentation](docs/project_packaging.md)
 
@@ -82,7 +82,7 @@ workflows.
 
    data_model/: Directory with data models used in the project. [DataModel Overview](docs/data_model.md)
 
-   entrypoints.py: Script with developed ML pipelines. [Pipeline Overview](docs/genre_class_pipeline_overview.md)
+   entrypoints.py: Script with developed ML pipelines. [Pipeline Overview](docs/ser_pipeline_overview)
 
    feature_extraction/: Directory with an abstract feature extraction class, implemented class, and
    factory. [Feature Extraction Documentation](docs/feature_extraction.md)

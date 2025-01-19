@@ -17,9 +17,6 @@ Audio preprocessing is crucial for several reasons:
   compression, maintaining the highest data quality.
 * Compatibility: WAV is universally supported across various platforms, making it a suitable choice for audio-related
   applications.
-* Enhanced Performance: Research by Tzanetakis and Cook (2002) has demonstrated that using uncompressed audio formats
-  like WAV leads to improved performance and accuracy in Music Information Retrieval (MIR) tasks, such as music
-  classification and genre recognition.
 
 ### How
 
@@ -30,7 +27,7 @@ Audio preprocessing is crucial for several reasons:
   Usage example:
 
     ~~~python
-    from genre_classification.preprocessor.audio_preprocess import AudioPreprocess
+    from ser.preprocessor.audio_preprocess import AudioPreprocess
     from settings import sample_rate
     
     audio_prep = AudioPreprocess(sample_rate=sample_rate)
@@ -41,7 +38,7 @@ Audio preprocessing is crucial for several reasons:
 
 
 * Audio Streaming
-  In scenarios where you deal with large audio files, such as in music genre classification, the streaming function
+  In scenarios where you deal with large audio files, such as in Speech Emotion Recognition, the streaming function
   becomes crucial. It addresses computational and memory limitations by processing audio data in smaller segments:
     * Standardization: The audio data is standardized to a consistent format using the _audio_converter function,
       ensuring uniformity across the dataset.
@@ -49,12 +46,12 @@ Audio preprocessing is crucial for several reasons:
       only the specified segment of the audio file at a time, enabling sequential processing and alleviating memory
       constraints.
     * Parallelized Processing: This approach also facilitates parallelized processing, optimizing computational
-      efficiency and memory utilization, making it ideal for working with vast music collections.
+      efficiency and memory utilization, making it ideal for working with vast speech collections.
 
   Usage example:
 
     ~~~python
-    from genre_classification.preprocessor.audio_preprocess import AudioPreprocess
+    from ser.preprocessor.audio_preprocess import AudioPreprocess
     
     source_audio = "path/to/your/audio_file.mp4"
     
@@ -98,7 +95,7 @@ The ImageDataset class provides a set of methods to streamline the image dataset
 Here's how to use it:
 
 ~~~python
-from genre_classification.preprocessor.image_dataset import ImageDataset
+from ser.preprocessor.image_dataset import ImageDataset
 
 # Instantiate the ImageDataset Class
 image_dataset = ImageDataset()
@@ -117,3 +114,37 @@ train_dataloader, val_dataloader, test_subset, classes = image_dataset.transform
 
 ### Audio Preprocess Pipeline
 ![Audio_preprocess](images/audio_preprocess_pipeline.png)
+
+
+## Data Augmentation for Audio
+
+### What
+
+Data augmentation is a technique used to expand a dataset by introducing 
+small modifications to the existing data. In the context of audio, augmentation involves 
+applying transformations such as noise injection, time shifting, pitch modification, and time stretching. 
+These methods generate synthetic variations of the original audio samples while maintaining their labels. 
+The goal of this process is to improve a model's ability to generalize and become robust to variations in real-world data.
+
+### Why
+
+Audio augmentation is vital for several reasons:
+
+* Improved Model Robustness: By exposing the model to variations like noise and pitch changes, it becomes more resilient to similar perturbations in real-world scenarios.
+* Enhanced Generalization: Introducing synthetic diversity in the training data reduces overfitting and improves the model's performance on unseen data.
+* Data Scarcity Mitigation: Augmentation is particularly useful when the available labeled audio data is limited, as it effectively multiplies the size of the dataset.
+
+### How
+
+Core Augmentation Methods
+
+* Noise Injection: Adds random noise to the audio signal to simulate real-world conditions like background noise.
+* Time Stretching: Alters the playback speed of the audio without changing the pitch, controlled by a specified rate.
+* Time Shifting: Shifts the audio signal forward or backward in time to simulate temporal displacements.
+* Pitch Shifting: Changes the pitch of the audio without altering its speed, using a defined pitch factor.
+
+Here's how it looks like:
+
+
+### Audio Augmentation 
+![Audio_augmentation](images/audio_augmentation.png)

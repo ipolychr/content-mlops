@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/abc1e991ca68459f86fe3e75597927d6/artifacts
+end_time: 1737221849633
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: abc1e991ca68459f86fe3e75597927d6
+run_name: bright-boar-150
+run_uuid: abc1e991ca68459f86fe3e75597927d6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737219902835
+status: 3
+tags: []
+user_id: ioanna

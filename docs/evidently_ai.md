@@ -20,15 +20,14 @@ projects.
 
 ### How
 
-Evidently AI offers robust tools for evaluating and monitoring classification models, ideal for music genre
-classification tasks. Its pre-built Reports and Test Suites enable comprehensive analysis, whether in binary or
+Evidently AI offers robust tools for evaluating and monitoring classification models, ideal for ser tasks. Its pre-built Reports and Test Suites enable comprehensive analysis, whether in binary or
 multi-class scenarios. Users can continuously monitor model performance in real-world production, scheduling regular
 test suite runs to compare against predefined expectations and using visual reports for stakeholder communication. The
 test suite facilitates proactive model retraining by detecting declines in quality, ensuring model accuracy over time.
 Visual reports help identify areas for improvement, analyzing error-prone segments and refining model performance
 iteratively. Evidently AI simplifies result analysis across different stages, from training to A/B testing and
 deployment.
-To implement Evidently AI for music genre classification, begin by ensuring you have already established the training
+To implement Evidently AI for Speech Emotion Recognition, begin by ensuring you have already established the training
 pipeline for your classification model. Once this is in place, integrate Evidently AI into your project by installing
 the library using pip install evidently. Import the necessary modules and functions from Evidently to access its
 reporting and testing functionalities within your Python script. Utilize Evidently AI's pre-built Classification
@@ -41,23 +40,23 @@ improvement, and result analysis.
 
 #### Classification Report
 
-To produce a classification report tailored for music genre classification using Evidently, it is imperative to curate
+To produce a classification report tailored for Speech Emotion Recognition using Evidently, it is imperative to curate
 the model logs into a structured pandas DataFrame. Each entry within the DataFrame should encapsulate pertinent details,
 including the input features, predicted labels (or probabilities), and ground truth labels. Once this data preparation
 step is completed, one can seamlessly employ Evidently's ClassificationPreset to conduct a rigorous analysis of the
 classification model's efficacy.
 
 The ensuing classification report, facilitated by Evidently, comprises a multifaceted array of components meticulously
-designed to furnish insights into the model's quality and performance in the context of music genre classification.
+designed to furnish insights into the model's quality and performance in the context of Speech Emotion Recognition.
 Commencing with the Model Quality Summary Metrics, the report undertakes the computation of quintessential metrics such
 as Accuracy, Precision, Recall, F1-score, ROC AUC, and LogLoss. These metrics serve as pillars in discerning the overall
-performance of the classification model across diverse music genres. Furthermore, Evidently's provision of interactive
+performance of the classification model across diverse emotion speeches. Furthermore, Evidently's provision of interactive
 visualizations endeavors to pinpoint areas of model fallibility, thereby fostering opportunities for refinement.
 Subsequently, the report unfolds to unveil Class Representation, offering a panoramic view of the distribution of
-musical compositions across various genres. Complementing this, the Confusion Matrix encapsulates the nuances of
+various speech emotions. Complementing this, the Confusion Matrix encapsulates the nuances of
 classification errors, elucidating their typology. Ultimately, Quality Metrics by Class empowers a granular examination
-of model performance, affording insights into its proficiency in discerning individual music genres. Through the
-amalgamation of these components, stakeholders can meticulously scrutinize the efficacy of the music genre
+of model performance, affording insights into its proficiency in discerning individual speech emotions. Through the
+amalgamation of these components, stakeholders can meticulously scrutinize the efficacy of the speech emotion
 classification model, thereby fostering informed decision-making and continuous improvement endeavors.
 Use case:
 
@@ -74,13 +73,13 @@ classification_performance_report.run(reference_data=bcancer_ref, current_data=b
 classification_performance_report
 ~~~
 
-#### Classification Report for Music Genre Classification
+#### Classification Report for Speech Emotion Recognition
 
 ![Classification Report](images/classification_report.png)
 
 #### Data Drift Report
 
-To analyze data drift in the context of music genre classification, Evidently offers a robust solution encapsulated
+To analyze data drift in the context of Speech Emotion Recognition, Evidently offers a robust solution encapsulated
 within its Data Drift report. This tool is indispensable for detecting and exploring changes in the input data,
 providing critical insights into the evolving nature of the dataset over time. Leveraging suitable drift detection
 methods tailored for numerical, categorical, or text features, the Data Drift report furnishes a comprehensive overview
@@ -94,7 +93,7 @@ of data drift, represented in the Data Drift Summary, which encapsulates the sha
 Dataset Drift result. Furthermore, the Data Drift Table offers a detailed breakdown of drifting features, facilitating a
 granular examination of their characteristics and typology. Complemented by Data Distribution by Feature and Data Drift
 by Feature visualizations, stakeholders gain deeper insights into the evolving dataset's nuances, empowering proactive
-measures to mitigate the impacts of data drift on the music genre classification model's performance.
+measures to mitigate the impacts of data drift on the Speech Emotion Recognition model's performance.
 
 ~~~python
 from evidently.metric_preset import DataDriftPreset
@@ -108,13 +107,13 @@ data_drift_report.run(reference_data=ref, current_data=cur)
 data_drift_report
 ~~~
 
-#### Data Drift Report for Music Genre Classification
+#### Data Drift Report for Speech Emotion Recognition
 
 ![Data Drift Report](images/data_drift.png)
 
 #### Data Quality Tests
 
-In the domain of music genre classification, maintaining data integrity is crucial, and Evidently's Data Quality report
+In the domain of Speech Emotion Recognition, maintaining data integrity is crucial, and Evidently's Data Quality report
 stands as a vital instrument for this task. Seamlessly integrated into the pipeline, this report enables thorough
 evaluations of data batches, even without a reference dataset, using the DataQualityTestPreset within a Test Suite. It
 furnishes users with comprehensive insights into descriptive statistics, uncovering crucial aspects such as missing
@@ -122,7 +121,7 @@ data, duplicates, and features with minimal variation. The report's automated te
 predefined heuristics or provided reference datasets, ensures efficient identification and resolution of potential
 issues. Additionally, users can customize the assessment process by employing bespoke conditions, thereby optimizing
 data quality checks to align with project-specific requirements. Ultimately, the Data Quality report serves as a
-proactive safeguard, fortifying data integrity and fostering confidence in the music genre classification pipeline's
+proactive safeguard, fortifying data integrity and fostering confidence in the Speech Emotion Recognition pipeline's
 performance.
 
 ~~~python
@@ -137,20 +136,20 @@ data_quality_test_suite.run(reference_data=ref, current_data=curr)
 data_quality_test_suite
 ~~~
 
-#### Data Quality Test for Music Genre Classification
+#### Data Quality Test for Speech Emotion Recognition
 
 ![Data Quality Test Report](images/data_quality.png)
 
 #### Data Stability Tests
 
-To ensure the stability of data used in the music genre classification pipeline, integrating Evidently's Data Stability
+To ensure the stability of data used in the Speech Emotion Recognition pipeline, integrating Evidently's Data Stability
 Test Suite proves invaluable. By incorporating the DataStabilityTestPreset within a dedicated Test Suite, users can
 effectively assess the consistency of newly acquired data batches compared to previous ones. This preset facilitates the
 calculation of diverse dataset and feature statistics, enabling the detection of anomalies such as new categorical
 values, out-of-range values, or fluctuations in data volume. Leveraging a reference dataset, Evidently automatically
 generates test conditions, streamlining the evaluation process. Additionally, users have the flexibility to define
 custom conditions, tailoring stability checks to specific project needs. Ultimately, the Data Stability Test Suite acts
-as a proactive mechanism, ensuring the reliability and continuity of data inputs within the music genre classification
+as a proactive mechanism, ensuring the reliability and continuity of data inputs within the Speech Emotion Recognition
 pipeline.
 
 ~~~python
@@ -166,6 +165,6 @@ data_stability.run(reference_data=prv, current_data=curr)
 data_stability
 ~~~
 
-#### Data Stability Test for Music Genre Classification
+#### Data Stability Test for Speech Emotion Recognition
 
 ![Data Stability Test Report](images/data_stability.png)

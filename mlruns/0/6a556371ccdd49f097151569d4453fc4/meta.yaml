@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/6a556371ccdd49f097151569d4453fc4/artifacts
+end_time: 1737223385996
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6a556371ccdd49f097151569d4453fc4
+run_name: secretive-gull-24
+run_uuid: 6a556371ccdd49f097151569d4453fc4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737223205283
+status: 3
+tags: []
+user_id: ioanna

@@ -12,10 +12,10 @@ def docker_dag_multiple_commands():
 
     t2 = DockerOperator(
         task_id='t2',
-        image='music-genre-classif:latest',
-        # command="bash -c 'ls -l checkpoints && dvc add checkpoints/resnet18_checkpoint.pt'",
-        command="bash -c 'dvc add checkpoints/resnet18_checkpoint.pt && dvc push && git add checkpoints/resnet18_checkpoint.pt.dvc'",
-        # command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path checkpoints --images_path Data/images_original && ls -l checkpoints',
+        image='ser:latest',
+        # command="bash -c 'ls -l ser_checkpoints && dvc add ser_checkpoints/resnet18_checkpoint.pt'",
+        command="bash -c 'dvc add ser_checkpoints/resnet18_checkpoint.pt && dvc push && git add ser_checkpoints/resnet18_checkpoint.pt.dvc'",
+        # command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path ser_checkpoints --images_path Data/images_original && ls -l ser_checkpoints',
         network_mode='bridge',
         environment={
             'AWS_DEFAULT_REGION': 'us-east-1',

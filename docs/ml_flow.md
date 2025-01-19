@@ -25,14 +25,14 @@ commercial alternatives.
 
 ### How
 
-n music genre classification, MLflow plays a pivotal role in monitoring and managing the training process. Its unified
+n Speech Emotion Recognition, MLflow plays a pivotal role in monitoring and managing the training process. Its unified
 interface allows for the systematic comparison of algorithms and hyperparameters, crucial in complex pipelines involving
 feature extraction, model training, and evaluation. Seamlessly integrated into the pipelines, MLflow monitors key
 metrics, with a focus on losses, ensuring comprehensive documentation for transparency and reproducibility. Beyond
 tracking, MLflow facilitates precise model versioning, aiding in the selection of optimal configurations. In the broader
 context of model lifecycle management, MLflow's centralized repository streamlines retrieval, deployment, and sharing
 across different environments. Scientifically grounded and versatile, MLflow meets the demands of ML experimentation in
-music genre classification, providing transparency and optimization insights. Illustrative figures highlight its utility
+Speech Emotion Recognition, providing transparency and optimization insights. Illustrative figures highlight its utility
 in experiment tracking and metrics visualization within this thesis implementation.
 
 Use case:
@@ -49,8 +49,4 @@ with mlflow.start_run(device, train_loss, val_loss, epoch):
 
 ### ML flow experimental page
 
-![Audio_preprocess](images/MLflow_main_page.png)
-
-### ML flow metric page
-
-![Audio_preprocess](images/MLflow_metrics.png)
+![Audio_preprocess](images/ml_flow.png)

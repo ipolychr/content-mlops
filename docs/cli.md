@@ -4,7 +4,7 @@
 
 In the realm of ML workflows, the Command-Line Interface (CLI) serves as a potent instrument for coordinating and
 executing intricate procedures. In the context of this thesis, the Click framework is employed to construct a CLI that
-simplifies the implementation of music genre classification pipelines. Here, CLI refers to a text-based interface
+simplifies the implementation of Speech Emotion Recognition pipelines. Here, CLI refers to a text-based interface
 enabling users to interact with the system by issuing commands.
 
 ### Why
@@ -20,7 +20,7 @@ with Python.
 
 * Streamlined Execution:
   CLI commands facilitate a streamlined execution of complex tasks, enabling researchers and practitioners to trigger
-  music genre classification pipelines with a single command. This simplicity enhances usability and reduces entry
+  Speech Emotion Recognition pipelines with a single command. This simplicity enhances usability and reduces entry
   barriers, making it accessible for users to engage with the system efficiently.
 
 * Reproducibility:
@@ -32,18 +32,18 @@ with Python.
 * User-Friendly Interface:
   Click provides an intuitive and user-friendly interface for CLI commands. The clean syntax and well-defined options
   make
-  it easy for users to understand and leverage the capabilities of the music genre classification system. This
+  it easy for users to understand and leverage the capabilities of the Speech Emotion Recognition system. This
   user-friendly aspect enhances the overall usability of the CLI.
 
 * Flexibility and Extensibility:
   The modular nature of CLI commands allows for extensibility and flexibility. Additional commands can be added to the
   CLI
-  to accommodate future enhancements or variations in the music genre classification pipeline. This adaptability ensures
+  to accommodate future enhancements or variations in the Speech Emotion Recognition pipeline. This adaptability ensures
   that the system can evolve with changing requirements and advancements in the field.
 
 ### How
 
-In the realm of music genre classification, a specific CLI command, "train_using_original_audios," is meticulously
+In the realm of Speech Emotion Recognition, a specific CLI command, "train_using_original_audios," is meticulously
 developed utilizing the Click framework. This command encapsulates the training pipeline for audio-based genre
 classification, exhibiting key components that enhance efficiency, reproducibility, and user-friendliness.
 
@@ -57,7 +57,7 @@ allowing users to customize parameters based on specific requirements.
 Integrated seamlessly within the overarching ML pipeline, the "train_using_original_audios" command plays a pivotal role
 by invoking the ml_entrypoints.train_tl_model_audio function. This function, positioned within the broader context of
 the extended pipeline, adeptly receives the specified options and orchestrates the intricate training process for the
-music genre classification model. The seamless connection ensures that the training task operates harmoniously within
+Speech Emotion Recognition model. The seamless connection ensures that the training task operates harmoniously within
 the larger pipeline, contributing cohesively to the model's evolution.
 
 **Result Handling**:
@@ -66,19 +66,18 @@ This meticulous handling ensures that evaluation results are not only easily acc
 contributing to the transparency and reliability of the research findings.
 
 The incorporation of the Click framework for CLI commands in this thesis significantly contributes to the efficiency,
-reproducibility, and user-friendliness of music genre classification workflows. CLI commands, empowered by Click, serve
+reproducibility, and user-friendliness of Speech Emotion Recognition workflows. CLI commands, empowered by Click, serve
 as a pivotal interface for researchers and practitioners to interact with and explore the intricacies of ML processes,
-providing a streamlined and accessible approach to managing and executing complex tasks in the context of music genre
-classification.
+providing a streamlined and accessible approach to managing and executing complex tasks in the context of ser.
 
 ~~~python
 import click
 
-import genre_classification.entrypoints as ml_entrypoints
-from genre_classification.data_model.criterion import Criterion, return_criterion
-from genre_classification.data_model.tl_models import TLModel
-from genre_classification.trainer.optimizer import Optimizer
-from genre_classification.utils.save_load import save_metrics
+import ser.entrypoints as ml_entrypoints
+from ser.data_model.criterion import Criterion, return_criterion
+from ser.data_model.tl_models import TLModel
+from ser.trainer.optimizer import Optimizer
+from ser.utils.save_load import save_metrics
 
 
 @click.group()
@@ -97,7 +96,7 @@ def cli():
 @click.option('--checkpoints_path', type=click.STRING, required=True, help='Checkpoint path to save models')
 @click.option('--images_path', type=click.STRING, required=True, help='Path to load the featured images for training')
 @click.option('--save', type=click.BOOL, required=False, default=True,
-              help='if true save the checkpoints to desired path')
+              help='if true save the ser_checkpoints to desired path')
 @click.option('--num_epoch', type=click.INT, default=1, help='The num of epochs for training')
 @click.option('--path_to_save_metric', type=click.STRING, default='metrics.json', help='The path to save the metrics')
 def train_using_image_features(model: TLModel, criterion: Criterion, optimizer: Optimizer, checkpoints_path: str,

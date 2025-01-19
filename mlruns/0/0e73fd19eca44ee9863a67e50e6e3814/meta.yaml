@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/0e73fd19eca44ee9863a67e50e6e3814/artifacts
+end_time: 1737221758885
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0e73fd19eca44ee9863a67e50e6e3814
+run_name: dazzling-shoat-688
+run_uuid: 0e73fd19eca44ee9863a67e50e6e3814
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737221717883
+status: 4
+tags: []
+user_id: ioanna

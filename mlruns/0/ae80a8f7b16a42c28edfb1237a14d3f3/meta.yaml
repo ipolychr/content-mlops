@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/ae80a8f7b16a42c28edfb1237a14d3f3/artifacts
+end_time: 1737290554461
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ae80a8f7b16a42c28edfb1237a14d3f3
+run_name: merciful-dove-45
+run_uuid: ae80a8f7b16a42c28edfb1237a14d3f3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737290551036
+status: 3
+tags: []
+user_id: ioanna

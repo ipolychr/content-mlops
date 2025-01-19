@@ -6,7 +6,7 @@ Apache Airflow is a robust open-source orchestration tool designed to efficientl
 learning (ML) workflows. It serves as a comprehensive platform for defining, scheduling, and executing workflows,
 providing a high degree of flexibility to customize and scale intricate data pipelines. Airflow's strengths lie in its
 adeptness at handling dependencies, monitoring workflow progress, and supporting dynamic scheduling. This versatility
-makes it an optimal choice for orchestrating ML pipelines, particularly in scenarios like music genre classification
+makes it an optimal choice for orchestrating ML pipelines, particularly in scenarios like Speech Emotion Recognition
 workflows.
 
 ### Why
@@ -50,8 +50,8 @@ def docker_dag():
 
     t2 = DockerOperator(
         task_id='t2',
-        image='music-genre-classif:latest',
-        command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path checkpoints --images_path Data/images_original',
+        image='ser:latest',
+        command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path ser_checkpoints --images_path data/images',
         network_mode='bridge',
         environment={
             'AWS_DEFAULT_REGION': 'us-east-1',
@@ -112,8 +112,8 @@ def docker_dag():
 
     t2 = DockerOperator(
         task_id='t2',
-        image='music-genre-classif:latest',
-        command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path checkpoints --images_path Data/images_original',
+        image='ser:latest',
+        command='python3 __main__.py train-using-image-features --model resnet18 --criterion cross_entropy --optimizer sdg --checkpoints_path ser_checkpoints --images_path data/images',
         network_mode='bridge',
         environment={
             'AWS_DEFAULT_REGION': 'us-east-1',

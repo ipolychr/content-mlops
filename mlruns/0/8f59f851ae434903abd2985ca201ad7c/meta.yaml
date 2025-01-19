@@ -1,0 +1,15 @@
+artifact_uri: file:///home/ioanna/Documents/pycharm/content-mlops/mlruns/0/8f59f851ae434903abd2985ca201ad7c/artifacts
+end_time: 1737222685557
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8f59f851ae434903abd2985ca201ad7c
+run_name: shivering-fowl-106
+run_uuid: 8f59f851ae434903abd2985ca201ad7c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1737221887941
+status: 4
+tags: []
+user_id: ioanna

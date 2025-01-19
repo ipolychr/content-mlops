@@ -1,4 +1,4 @@
 [core]
     remote = s3-storage
 ['remote "s3-storage"']
-    url = s3://dops-dev-se-ioanna-testing/genre-classification/
+    url = s3:/dev-s3-ser-data/ser/
